@@ -11,7 +11,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-8F8V04HVT6');
 </script>
 
@@ -25,9 +24,9 @@
   --card: #ffffff;
   --text: #0f172a;
   --muted: #6b7280;
-  --accent-1: #2563eb; /* azul escuro */
-  --accent-2: #3b82f6; /* azul médio */
-  --accent-3: #60a5fa; /* azul claro */
+  --accent-1: #2563eb;
+  --accent-2: #3b82f6;
+  --accent-3: #60a5fa;
   --success: #10b981;
   --warn: #f59e0b;
   --danger: #ef4444;
@@ -65,27 +64,22 @@ html,body{height:100%; margin:0; font-family:'Inter',sans-serif; background: lin
 
 <body class="min-h-screen flex flex-col items-center">
 
-<!-- Hero -->
 <header class="w-full relative overflow-hidden">
   <div class="hero-graphic" aria-hidden="true">
     <div class="hero-shape a"></div>
     <div class="hero-shape b"></div>
   </div>
-
   <div class="max-w-4xl mx-auto px-6 py-16 relative z-10 text-center">
     <p class="text-sm font-semibold text-blue-600">LUCRE COM SHOPEE</p>
-    <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-4">Quiz: Você está pronto para transformar seu tempo livre em dinheiro de verdade?</h1>
-    <p class="max-w-2xl mx-auto text-gray-600 mb-8">Responda a este quiz gratuito rápido e descubra como você pode faturar como afiliado da Shopee, trabalhando de onde quiser, sem precisar vender produtos fisicamente ou aparecer em vídeos.</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-4">Quiz: Você está pronto para transformar seu tempo livre em dinheiro?</h1>
+    <p class="max-w-2xl mx-auto text-gray-600 mb-8">Responda rápido e descubra como faturar como afiliado da Shopee, sem precisar vender produtos fisicamente ou aparecer em vídeos.</p>
     <div class="flex items-center justify-center gap-4">
-      <button id="startQuizBtn" class="btn-primary" aria-controls="quizContainer">
-        🚀 Iniciar Teste Grátis
-      </button>
+      <button id="startQuizBtn" class="btn-primary" aria-controls="quizContainer">🚀 Iniciar Teste Grátis</button>
     </div>
-    <p class="mt-4 muted text-sm">Quanto mais cedo você começar, mais cedo você lucra.</p>
+    <p class="mt-4 muted text-sm">Quanto mais cedo começar, mais cedo lucra.</p>
   </div>
 </header>
 
-<!-- QUIZ MAIN -->
 <main class="w-full flex-1 flex items-start justify-center px-4 pb-20">
   <div id="quizContainer" class="quiz-container p-8 hidden" role="region" aria-live="polite">
     <div class="flex items-center justify-between mb-6">
@@ -99,7 +93,6 @@ html,body{height:100%; margin:0; font-family:'Inter',sans-serif; background: lin
     <div id="quizContent"></div>
   </div>
 
-  <!-- RESULTS -->
   <div id="resultsContainer" class="quiz-container p-8 hidden" aria-live="polite">
     <div class="md:flex md:gap-8 items-start">
       <div class="flex-1">
@@ -112,9 +105,7 @@ html,body{height:100%; margin:0; font-family:'Inter',sans-serif; background: lin
         </div>
         <div class="percent-display" id="percentDisplay">0%</div>
         <div class="mt-8 text-center">
-          <a id="affiliateBtn" href="https://pay.cakto.com.br/5ftikw9_314865?affiliate=aHUMWqiw" target="_blank" class="btn-primary">
-            🔥 GARANTIR MINHA VAGA - 7 DIAS DE GARANTIA
-          </a>
+          <a id="affiliateBtn" href="https://pay.cakto.com.br/5ftikw9_314865?affiliate=aHUMWqiw" target="_blank" class="btn-primary">🔥 GARANTIR MINHA VAGA</a>
           <p class="text-sm muted mt-3">Suporte completo • Método passo a passo • Garantia de 7 dias</p>
         </div>
       </div>
@@ -122,21 +113,19 @@ html,body{height:100%; margin:0; font-family:'Inter',sans-serif; background: lin
   </div>
 </main>
 
-<footer class="w-full text-center py-8 muted">
-  © 2025 — Treinamento Lucre com Shopee. Resultados dependem da execução.
-</footer>
+<footer class="w-full text-center py-8 muted">© 2025 — Treinamento Lucre com Shopee. Resultados dependem da execução.</footer>
 
 <script>
 const questions = [
-  { q: "Você já conhece o programa de afiliados da Shopee?", opts:["Sim","Não","Um pouco"] },
-  { q: "Você possui redes sociais para divulgar produtos?", opts:["Sim, várias","Tenho algumas","Não"] },
-  { q: "Você quer trabalhar de casa sem vender produtos físicos?", opts:["Sim","Não","Talvez"] },
-  { q: "Você tem disponibilidade de pelo menos 1 hora por dia?", opts:["Sim","Não","Talvez"] },
-  { q: "Quer aprender estratégias gratuitas e pagas de divulgação?", opts:["Sim","Não","Talvez"] },
-  { q: "Quer ganhar sem precisar aparecer em vídeos?", opts:["Sim","Não","Talvez"] },
-  { q: "Deseja acessar suporte e comunidade exclusiva de alunos?", opts:["Sim","Não","Talvez"] }
+  { q: "Você entende como funcionam as comissões do programa de afiliados da Shopee?", opts:["Sim, conheço bem","Tenho uma ideia","Não sei"] },
+  { q: "Você já tem experiência divulgando produtos online?", opts:["Sim, regularmente","Algumas vezes","Nunca"] },
+  { q: "Você quer ganhar dinheiro sem precisar estocar ou enviar produtos?", opts:["Sim, totalmente","Talvez","Não"] },
+  { q: "Você consegue se dedicar diariamente para promover produtos e aprender estratégias?", opts:["Sim, com consistência","Às vezes","Não consigo"] },
+  { q: "Você quer aprender táticas avançadas de marketing digital para afiliados?", opts:["Sim, todas","Algumas","Não"] },
+  { q: "Você prefere ganhar com vendas sem precisar aparecer em vídeos ou lives?", opts:["Sim, prefiro oculto","Talvez","Não"] },
+  { q: "Deseja receber suporte, dicas e acesso a uma comunidade de alunos ativos?", opts:["Sim, quero","Talvez mais tarde","Não quero"] }
 ];
-const scoreMatrix = [[3,1,2],[3,2,1],[3,1,2],[3,1,2],[3,1,2],[3,1,2],[3,1,2]];
+const scoreMatrix = [[3,1,0],[3,1,0],[3,1,0],[3,1,0],[3,1,0],[3,1,0],[3,1,0]];
 let current = 0;
 const answers = new Array(questions.length).fill(null);
 
@@ -183,14 +172,19 @@ function finishQuiz(){
   resultsContainer.classList.remove('hidden');
   const total = computeTotal();
   let level='Médio', percent=50, color='var(--warn)';
-  if(total>=17){level='Alto';percent=90;color='var(--success)';} else if(total>=12){level='Médio';percent=55;color='var(--warn)';} else {level='Baixo';percent=25;color='var(--danger)';}
+  if(total>=17){level='Alto';percent=90;color='var(--success)';} 
+  else if(total>=12){level='Médio';percent=55;color='var(--warn)';} 
+  else {level='Baixo';percent=25;color='var(--danger)';}
+  
   const heading = document.getElementById('resultHeading');
   const summary = document.getElementById('resultSummary');
   const badgeWrap = document.getElementById('badgeWrap');
   const rec = document.getElementById('recommendations');
+  
   heading.innerText = `Seu nível de preparação: ${level}`;
   badgeWrap.innerHTML=`<span class="result-badge" style="background:${color};">${level.toUpperCase()}</span>`;
   percentDisplay.innerText = `${percent}%`;
+  
   if(level==='Alto'){
     summary.innerText = 'Você está pronto para iniciar e potencializar ganhos com a Shopee imediatamente!';
     rec.innerHTML = '<li class="recommendation">Comece a aplicar as estratégias do curso sem demora.</li><li class="recommendation">Use redes sociais para divulgar produtos com alto potencial de comissão.</li><li class="recommendation">Participe da comunidade para acelerar resultados.</li>';
@@ -205,7 +199,3 @@ function finishQuiz(){
 </script>
 </body>
 </html>
-
-
-
-
